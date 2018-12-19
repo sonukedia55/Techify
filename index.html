@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jio Kisan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/login.js"></script>
+
+  <style>
+    *{
+      margin:0px;padding:0px;width:100%;
+    }
+    .backimage{
+      width:100%;
+      z-index:-100;
+      height:100%;
+      position:absolute;
+    }
+    .jiologo{
+      margin-top:50px;
+      text-align:center;
+    }
+    .jiologl{
+      width:60px;
+      height:60px;
+    }
+    .jioname{
+      color:white;
+      font-weight:bold;
+      text-align:center;
+    }
+    .jiologo hr{
+      width:50%;
+      margin-left:25%;
+    }
+    .phonebox{
+      background-color:transparent;
+      border:none;
+      width:60%;
+      text-align:center;
+      font-size:15px;
+      margin:60px 20% 10px;
+      border-bottom:solid 2px white;
+      color:lightgrey;
+      padding:3px;
+    }
+    .phonebox:focus{
+      border:none;outline:none;
+      box-shadow:none;
+      border-bottom:solid 2px #00837c;
+    }
+    .phonebutton{
+      background-color:#00837c;
+      border:solid 1px lightgrey;
+      width:60%;
+      text-align:center;
+      border-radius:20%;
+      font-size:15px;
+      margin:30px 20% 10px;
+      color:white;
+      padding:10px 5px;
+    }
+    .logobutton{
+      width:70%;
+      height:60px;
+      border:none;
+      background:transparent;
+      background-image: url("images/login.PNG");
+      margin:2px 15% 10px;
+      background-size: contain;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      font-size:20px;
+      color:white;
+      padding:15px 5px;
+    }
+    .logobutton:focus{
+      color:green;
+      -webkit-filter: drop-shadow(0px 0px 2px white);
+    }
+
+  </style>
+</head>
+<body onkeypress="myFunction(event)">
+  <img class="backimage" src="images/homefarm2.JPG"/>
+  <div class="row">
+    <div class="jiologo col-sm-12">
+      <img class="jiologl"  src="images/RJ.png"/>
+      <div class="mt-4" style="margin-top:30px;">.</div>
+    <h3 class="jioname col-sm-12">Jio Kisan</h3>
+    <hr>
+    <h3 class="jioname col-sm-12">जियो किसान</h3>
+
+    <input class="phonebox" placeholder="Enter Phone Number" autofocus/>
+    <input type="submit" class="logobutton" value="Login"/>
+  </div>
+</body>
+</html>

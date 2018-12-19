@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jio Kisan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/addborrow.js"></script>
+
+  <style>
+    *{
+      margin:0px;padding:0px;width:100%;
+    }
+    .bgblue{
+      width:100%;
+      background-color:#3498db;
+      padding:5px;
+    }
+    .row{
+      width:100%;
+      margin:0px;
+    }
+    .bgblue img{
+      margin:0px;
+      width:80px;
+    }
+    .bgblue h3{
+      margin-top:10px;
+      margin-left:-13px;
+      font-size:27px;
+    }
+    .iconss img{
+      border:solid 5px white;
+      -webkit-filter: drop-shadow(0px 0px 1px white);
+    }
+    .borrow{
+      background-color: #f2f3f4;
+      border-radius: 2px;
+      text-align: left;
+      margin-top: 10px;
+      padding:10px;
+      border: solid 2px #d5d8dc;
+    }
+    .borrow p{
+      font-size: 12px;
+    }
+    .borrow h6{
+      color:#3498db;
+      font-weight: bold;
+    }
+    .iconss{
+      margin: 0;
+    }
+    .mp{
+      padding: 5px;
+    }
+    .borrow h7{
+      width: 100%;
+      font-size: 12px;
+      color:#27ae60;
+    }
+    .iconss input{
+      margin: 5px 0px;
+    }
+    .btn-danger{
+      background-color: #f1948a;
+      color:red;
+    }
+    .btn-success{
+      background-color: lightgreen;
+      color: green;
+    }
+    .btn-danger:focus,.btn-success:focus{
+        -webkit-filter: drop-shadow(0px 0px 3px grey);
+    }
+
+
+
+  </style>
+</head>
+<body onkeypress="myFunction(event)">
+  <div class="row">
+    <div class="col-xs-12 bgblue">
+      <img class="col-xs-3"  src="images/RJ.png"/>
+      <h3 class="col-xs-7">Manage Give</h3>
+    </div>
+    <div class="row iconss">
+      <div class=" col-xs-12 mp">
+        <div class="row add">
+          <input class="form-control f1" placeholder="Enter Resource Name" autofocus/>
+          <input class="form-control f2" placeholder="Avalabile from Date (yyyy-mm-dd)"/>
+          <input class="form-control f3" placeholder="Avalabile Upto Date (yyyy-mm-dd)"/>
+          <input class="form-control f4" placeholder="Expected per Day Price"/>
+          <input type="file" class="f5 form-control-file"/>
+          <button class="btn btn-success f6" >Add For Rent</button>
+        </div>
+          <div class="row borrow">
+
+            <h6>Ram (9812828192)</h6>
+            <h7>Distance : 12km</h7><br>
+            <h7>Avalabile from 12 Jan'19 to 18 Jan'19</h7><br>
+            <h7>Expected Price - &#x20B9; 1200 / day </h7><br><br>
+            <p>We are actively engaged in trading, exporting, importing and supplying highly reliable Harvester Machine in various specifications. The offered machine is precisely designed and manufactured under the supervision of quality controllers by utilizing top-notch quality components and cutting-edge technology in compliance with international quality standards at vendors end....</p>
+
+            <img src="images/temp1.jpg"/>
+            <button class="btn btn-danger f7">Remove</button>
+         </div>
+         <div class="row borrow">
+
+           <h6>Ram (9812828192)</h6>
+           <h7>Distance : 12km</h7><br>
+           <h7>Avalabile from 12 Jan'19 to 18 Jan'19</h7><br>
+           <h7>Expected Price - &#x20B9; 1200 / day </h7><br><br>
+           <p>We are actively engaged in trading, exporting, importing and supplying highly reliable Harvester Machine in various specifications. The offered machine is precisely designed and manufactured under the supervision of quality controllers by utilizing top-notch quality components and cutting-edge technology in compliance with international quality standards at vendors end....</p>
+
+           <img src="images/temp1.jpg"/>
+           <button class="btn btn-danger f8">Remove</button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

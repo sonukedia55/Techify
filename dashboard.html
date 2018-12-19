@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jio Kisan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/dashboard.js"></script>
+
+  <style>
+    *{
+      margin:0px;padding:0px;width:100%;
+    }
+    .backimage{
+      width:100%;
+      z-index:-100;
+      height:100%;
+      position:absolute;
+    }
+    .jiologo{
+      margin-top:50px;
+      text-align:center;
+    }
+    .jiologl{
+
+    }
+    .jioname{
+      color:white;
+      font-weight:bold;
+      text-align:center;
+    }
+    .jiologo hr{
+      width:50%;
+      margin-left:25%;
+    }
+    .phonebox{
+      background-color:transparent;
+      border:none;
+      width:60%;
+      text-align:center;
+      font-size:15px;
+      margin:60px 20% 10px;
+      border-bottom:solid 2px white;
+      color:lightgrey;
+      padding:3px;
+    }
+    .phonebox:focus{
+      border:none;outline:none;
+      box-shadow:none;
+      border-bottom:solid 2px #00837c;
+    }
+    .phonebutton{
+      background-color:#00837c;
+      border:solid 1px lightgrey;
+      width:60%;
+      text-align:center;
+      border-radius:20%;
+      font-size:15px;
+      margin:30px 20% 10px;
+      color:white;
+      padding:10px 5px;
+    }
+    .logobutton{
+      width:70%;
+      height:60px;
+      border:none;
+      background:transparent;
+      background-image: url("images/login.PNG");
+      margin:2px 15% 10px;
+      background-size: contain;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      font-size:20px;
+      color:white;
+      padding:15px 5px;
+    }
+    .logobutton:focus{
+      color:green;
+      -webkit-filter: drop-shadow(0px 0px 2px white);
+    }
+    .bgblue{
+      width:100%;
+      background-color:#3498db;
+      padding:5px;
+    }
+    .row{
+      width:100%;
+      margin:0px;
+    }
+    .bgblue img{
+      margin:0px;
+      width:80px;
+    }
+    .bgblue h3{
+      margin-top:10px;
+      margin-left:-13px;
+      font-size:27px;
+    }
+    .iconss .row{
+      text-align:center;
+    }
+    .iconss img{
+      width:80px;
+      border-radius:50%;
+      border:solid 5px white;
+      -webkit-filter: drop-shadow(0px 0px 1px white);
+    }
+    .iconss h6{
+      color:white;
+      font-size:17px;
+    }
+    .iconn{
+      margin-top:30px;
+    }
+
+    .i1 img{
+
+      -webkit-filter: drop-shadow(0px 0px 3px #f7dc6f);
+      border:solid 5px #f7dc6f;
+    }
+    .i1 h6{
+      color:#f7dc6f;
+    }
+
+  </style>
+</head>
+<body onkeypress="myFunction(event)">
+  <img class="backimage" src="images/homefarm2.JPG"/>
+  <div class="row">
+    <div class="col-xs-12 bgblue">
+      <img class="col-xs-3"  src="images/RJ.png"/>
+      <h3 class="col-xs-7">Jio Kisan</h3>
+    </div>
+    <div class="mt-4" style="margin-top:100px;">.</div>
+    <div class="row iconss">
+      <div class=" col-xs-12">
+        <div class="col-xs-6 i1 iconn">
+          <div class="row">
+            <img src="images/forumm.png"/>
+            <h6>Forum</h6>
+          </div>
+        </div>
+        <div class="col-xs-6 i2 iconn">
+            <div class="row">
+              <img src="images/borrow.png"/>
+              <h6>Borrow</h6>
+            </div>
+          </div>
+          <div class="col-xs-6 i3 iconn">
+              <div class="row">
+                <img src="images/news2.png"/>
+                <h6>News</h6>
+              </div>
+          </div>
+          <div class="col-xs-6 i4 iconn">
+                <div class="row">
+                  <img src="images/forum.png"/>
+                  <h6>Enquiry</h6>
+                </div>
+          </div>
+    </div>
+    </div>
+</body>
+</html>
