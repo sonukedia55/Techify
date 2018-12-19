@@ -1,10 +1,16 @@
 
 var movee = 8;
 var mv = 1;
+var working =0;
+var long = 0; var lat = 0;
+var getloc = 0;
 //13 enter 37 left
 function myFunction(e) {
+
+
        var ev = e || window.event;
-       var key  = (e.keyCode ? e.keyCode : e.which);
+       var key = 0;
+       key  = (e.keyCode ? e.keyCode : e.which);
 
        if(key==38){
          if(mv>1)
@@ -16,12 +22,17 @@ function myFunction(e) {
          mv++;
          //if(mv>movee)mv=1;
        }
+       
        $('.f'+mv).focus();
        //alert(mv);
        if(key==13){
-         if(mv==movee){
-           alert("Done");
+         if(mv==7){
+           submitborrow();
          }
        }
+       //alert(key);
+       if(key==37){
+         window.location="borrow.html";
+       }
 
-     }
+  }

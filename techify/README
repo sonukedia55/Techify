@@ -1,0 +1,28 @@
+Team Name: Techify
+Institute: IIT Ropar
+Coding Hackathon, 7th Inter IIT Tech Meet, IIT Bombay
+Team Members: Abhinav Jindal(2016CSB1026), Chirag Khurana(2016CSB1037), Amit Kumar(2016EEB1070), Sonu Kedia(2016MEB1142)
+
+=======================================Introduction==================================
+We have come up with a solution to aid Indian farmers as they constitute large proportion of Jio Phone users in India.
+1. This application will help them gain required information through a QnA portal which will be answered by general public and their answers will be prioritized according to the likes of the readers. 
+
+2. Borrow/Loaning the agricultural hardwares required for effective agricultural activities like harvesting, plowing, etc. This may be helpful as not everyone is fortunate enough to buy each and every hardware, and this pooling of hardwares will really ease the burden off them.
+
+3. Information: This module of the application helps in providing the latest information about the newest machines and latest agricultural techniques so that they can be upto date with the current advancements.
+
+=======================================Requirements==================================
+1. MySQL
+2. PHP
+3. JavaScript enabled browser
+
+========================================How to run===================================
+1. Use JIO_KISAN.sql file in the MySQL to create the database.
+
+2. Fill your database credentials in the "connect.php".
+
+3. Open app/index.html in the browser.
+
+4. Enter mobile no. 9090909090 to run this application.
+
+=====================================================================================

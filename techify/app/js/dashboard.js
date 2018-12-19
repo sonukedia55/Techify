@@ -1,6 +1,6 @@
 
 var movee = [[".i1",".i2"],[".i3",".i4"]];
-var fun = [["Forum","Borrow"],["News","Enquiry"]];
+var fun = [["Forum","Borrow"],["Information","Enquiry"]];
 var mvi = 1;
 var mvj = 1;
 //13 enter 37 left
@@ -34,8 +34,20 @@ function myFunction(e) {
        changecolor(mvi,mvj);
        //alert(mv);
        if(key==13){
-
-           alert(fun[mvi-1][mvj-1]);
+           var g = fun[mvi-1][mvj-1];
+           if(g=="Borrow"){
+             window.location="borrow.html";
+           }
+           if(g=="Information"){
+             window.location="news.html";
+           }
+           if(g=="Forum"){
+             window.location="forum.html";
+           }
        }
 
      }
+
+if(localStorage.getItem("userid")==null){
+  window.location = "index.html";
+}

@@ -8,7 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="js/dashboard.js"></script>
+  <script src="js/addinfo.js"></script>
 
   <style>
     *{
@@ -36,7 +36,7 @@
       border:solid 5px white;
       -webkit-filter: drop-shadow(0px 0px 1px white);
     }
-    .borrow{
+    .news{
       background-color: #f2f3f4;
       border-radius: 2px;
       text-align: left;
@@ -62,6 +62,20 @@
       font-size: 12px;
       color:#27ae60;
     }
+    .iconss input{
+      margin: 5px 0px;
+    }
+    .btn-danger{
+      background-color: #f1948a;
+      color:red;
+    }
+    .btn-success{
+      background-color: lightgreen;
+      color: green;
+    }
+    .btn-danger:focus,.btn-success:focus{
+        -webkit-filter: drop-shadow(0px 0px 3px grey);
+    }
 
 
 
@@ -71,23 +85,33 @@
   <div class="row">
     <div class="col-xs-12 bgblue">
       <img class="col-xs-3"  src="images/RJ.png"/>
-      <h3 class="col-xs-7">Borrow</h3>
+      <h3 class="col-xs-7">Manage Info</h3>
     </div>
     <div class="row iconss">
       <div class=" col-xs-12 mp">
         <div class="row add">
-            <button type="submit" autofocus><i class="fa fa-plus mr-3" style="width:auto;"></i>&nbsp;Add For Rent</button>
+          <textarea class="form-control f1" placeholder="Enter Subject" autofocus></textarea>
+          <input type="file" class="f2 form-control-file"/>
+          <button class="btn btn-success f3" >Add Info</button>
         </div>
-          <div class="row borrow">
+        <div class="newslist">
+          <div class="row news">
 
             <h6>Ram (9812828192)</h6>
-            <h7>Distance : 12km</h7><br>
-            <h7>Avalabile from 12 Jan'19 to 18 Jan'19</h7><br>
-            <h7>Expected Price - &#x20B9; 1200 / day </h7><br><br>
             <p>We are actively engaged in trading, exporting, importing and supplying highly reliable Harvester Machine in various specifications. The offered machine is precisely designed and manufactured under the supervision of quality controllers by utilizing top-notch quality components and cutting-edge technology in compliance with international quality standards at vendors end....</p>
 
             <img src="images/temp1.jpg"/>
+            <button class="btn btn-danger f4">Remove</button>
          </div>
+         <div class="row news">
+
+           <h6>Ram (9812828192)</h6>
+           <p>We are actively engaged in trading, exporting, importing and supplying highly reliable Harvester Machine in various specifications. The offered machine is precisely designed and manufactured under the supervision of quality controllers by utilizing top-notch quality components and cutting-edge technology in compliance with international quality standards at vendors end....</p>
+
+           <img src="images/temp1.jpg"/>
+           <button class="btn btn-danger f5">Remove</button>
+        </div>
+      </div>
     </div>
     </div>
 </body>
